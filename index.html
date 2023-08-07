@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Bendroz</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/styles.css"/>
+        <link href="https://fonts.cdnfonts.com/css/heywow" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/f58f4d65bc.js" crossorigin="anonymous"></script>
+		<script src='scripts/scripts.js' async></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="nav-pane-content">
+                    <div class="close-button-container">
+                        <img class="nav-logo" src="images/bendroz-logo-white.png" alt="">
+                        <button type="button" class="nav-button close" onclick="toggleNav()">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </button>
+                    </div>                
+                    <div class="nav-links-container">
+                        <a href="index.html">
+                            <span class="nav-text">Accueil</span>
+                            <ion-icon class="nav-icon" name="home-outline"></ion-icon>
+                        </a>
+                        <a href="prestation.html">
+                            <span class="nav-text">Prestation</span>
+                            <ion-icon class="nav-icon" name="hammer-outline"></ion-icon>
+                        </a>
+                        <a href="a_propos.html">
+                            <span class="nav-text">À propos</span>
+                            <ion-icon class="nav-icon" name="person-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-container">
+                <a href="index.html"><img id="logo-principal" src="images/bendroz-logo.png" alt="logo"></a>
+                <nav class="nav-large-screen">
+                    <a href="index.html">
+                        <span class="text-link">Accueil</span>
+                    </a>
+                    <a href="prestation.html">
+                        <span class="text-link">Prestation</span>
+                    </a>
+                    <a href="a_propos.html">
+                        <span class="text-link">À propos</span>
+                    </a>
+                </nav>
+                <button type="button" class="nav-button open" onclick="toggleNav()">
+                    <ion-icon name="menu-sharp"></ion-icon>
+                </button>
+            </div>
+        </header> 
+        <main class="main">
+            <div class="introduction-container">
+                <h1>Notre savoir faire rien que pour vous</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <p>Notre entreprise de géoinformatique offre des solutions innovantes pour répondre aux besoins en matière de géolocalisation et d'analyse spatiale. Nous travaillons avec une variété de secteurs, notamment l'environnement, l'urbanisme, les transports, l'agriculture et bien d'autres. Notre expertise en géoinformatique nous permet d'offrir des solutions personnalisées et efficaces pour répondre aux besoins de nos clients.</p>
+            </div>
+            
+            <div class="prestation-container">
+                <h1>Découvrir nos prestation</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="prestation-button-container">
+                    <div class="prestation-button">
+                        <button class="analyse-spatiale" type="button">
+                            <ion-icon  class="prestation-icon" name="layers"></ion-icon>
+                            <span class="prestation-text">Analyse spatiale</span>
+                        </button>
+                        <button class="cartographie" type="button">
+                            <ion-icon class="prestation-icon" name="map"></ion-icon>
+                            <span class="prestation-text">Cartographie</span>
+                        </button>
+                    </div>
+                    <div class="prestation-button">
+                        <button class="database" type="button">
+                            <ion-icon class="prestation-icon" name="server"></ion-icon>
+                            <span class="prestation-text">Base de données</span>
+                        </button>
+                        <button class="teledetection" type="button">
+                            <ion-icon class="prestation-icon" name="earth"></ion-icon>
+                            <span class="prestation-text">Télédétection</span>
+                        </button>
+                    </div>                    
+                </div>
+            </div>
+            <div class="reference-container">
+                <h1>Nos références</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="reference-content-container">
+                    <div class="reference-pane">
+                        <div class="ref1">
+                            <div class="reference-content">
+                                <h2>Couverture A9</h2>
+                                <img class="image" src="images/couverture_A9.png" alt="">
+                                <p>Création d'un jumeau numérique pour le projet de construction de l'autoroute A9 à Boveresse</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reference-pane ref2">
+                        <div class="reference-content">
+                            <h2>Where2Play</h2>
+                            <img class="image" src="images/where2play.png" alt="">
+                            <p>Where2Play est une application mobile permettant de localiser des terrains de sport sur toute la Suisse romande</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main> 
+        <footer class="footer">
+            <div class="footer-container">
+                <img class="footer-logo" src="images/bendroz-logo-white.png" alt="">
+            </div>
+        </footer>
+    
+    </body>
+</html>
+

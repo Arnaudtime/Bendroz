@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Bendroz</title>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/styles.css"/>
+        <link href="https://fonts.cdnfonts.com/css/heywow" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/f58f4d65bc.js" crossorigin="anonymous"></script>
+		<script src='scripts/scripts.js' async></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="nav-pane-content">
+                    <div class="close-button-container">
+                        <img class="nav-logo" src="images/bendroz-logo-white.png" alt="">
+                        <button type="button" class="nav-button close" onclick="toggleNav()">
+                            <ion-icon name="chevron-forward"></ion-icon>
+                        </button>
+                    </div>                
+                    <div class="nav-links-container">
+                        <a href="index.html">
+                            <span class="nav-text">Accueil</span>
+                            <ion-icon class="nav-icon" name="home-outline"></ion-icon>
+                        </a>
+                        <a href="prestation.html">
+                            <span class="nav-text">Prestation</span>
+                            <ion-icon class="nav-icon" name="hammer-outline"></ion-icon>
+                        </a>
+                        <a href="">
+                            <span class="nav-text">À propos</span>
+                            <ion-icon class="nav-icon" name="person-circle-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-container">
+                <a href="index.html"><img id="logo-principal" src="images/bendroz-logo.png" alt="logo"></a>
+                <nav class="nav-large-screen">
+                    <a href="index.html">
+                        <span class="text-link">Accueil</span>
+                    </a>
+                    <a href="prestation.html">
+                        <span class="text-link">Prestation</span>
+                    </a>
+                    <a href="a_propos.html">
+                        <span class="text-link">À propos</span>
+                    </a>
+                </nav>
+                <button type="button" class="nav-button open" onclick="toggleNav()">
+                    <ion-icon name="menu-sharp"></ion-icon>
+                </button>
+            </div>
+        </header>
+        <main>
+
+            <div class="a-histoire-container">
+                <h1>Histoire</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="a-histoire-text">
+                    <p>Il était une fois deux jeunes apprentis passionnés par la géomatique, Amine et Arnaud. Ils avaient étudié la géomatique pendant des années et étaient fascinés par la façon dont les données spatiales pouvaient être utilisées pour résoudre des problèmes dans différents domaines.</p>
+                    <p>Un jour, alors qu'ils étaient en train de discuter de leur passion pour la géomatique, ils se sont rendu compte qu'il y avait un besoin croissant pour des services de géoinformatique dans différents secteurs tels que l'agriculture, l'environnement, l'aménagement du territoire, la gestion de l'eau, la gestion des catastrophes naturelles et bien d'autres.</p>
+                    <p class="unique-text">BENDROZ était né</p>
+                </div>
+            </div>
+
+            <div class="a-fondateur-container">
+                <h1>Fondateur</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="a-fondateur-content">
+                    <figure class="a-affiche-container">
+                        <img class="fondateur" id="amine" src="https://media.licdn.com/dms/image/D4E03AQEW1ACbAbaU5g/profile-displayphoto-shrink_200_200/0/1683620052637?e=1697068800&v=beta&t=n6HgZnI1PqSa7iv9LyPu1cXt_E28C-pwvqSY3KmpTtg" alt="Amine">
+                        <div class="a-affiche-text">
+                            <span>Amine Benalem</span>
+                            <span>SDA specialist</span>
+                            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/amine-benalem-79ab20176/"><span>Linkedin <i class="lien fa-brands fa-linkedin fa-xl"></i></span></i></a>
+                        </div>
+                    </figure>
+                    <figure class="a-affiche-container">
+                        <img class="fondateur" id="arnaud"  src="https://media.licdn.com/dms/image/D4E03AQH8uTmkISoCCw/profile-displayphoto-shrink_200_200/0/1683620185889?e=1697068800&v=beta&t=IqBfDb7-0CDWMIRKBofjWdiJTcPwR10o6FJpVgo8TNY" alt="Arnaud">
+                        <div class="a-affiche-text">
+                            <span>Arnaud Amez-Droz</span>
+                            <span>SDA hater</span>
+                            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/arnaud-amez-droz-767329205/"><span>Linkedin <i class="lien fa-brands fa-linkedin fa-xl"></i></span></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+
+
+
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <img class="footer-logo" src="images/bendroz-logo-white.png" alt="">
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
+
