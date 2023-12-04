@@ -10,6 +10,7 @@
 		<script src='scripts/scripts.js' async></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/smooth-scroll/dist/smooth-scroll.min.js"></script>
     </head>
     <body>
         <header>
@@ -22,17 +23,25 @@
                         </button>
                     </div>                
                     <div class="nav-links-container">
-                        <a href="index.html">
+                        <a class="smooth-scroll nav-toggle-button" href="#first">
                             <span class="nav-text">Accueil</span>
                             <ion-icon class="nav-icon" name="home-outline"></ion-icon>
                         </a>
-                        <a href="prestation.html">
-                            <span class="nav-text">Prestation</span>
+                        <a class="smooth-scroll nav-toggle-button" href="#prestation">
+                            <span class="nav-text">Prestations</span>
                             <ion-icon class="nav-icon" name="hammer-outline"></ion-icon>
                         </a>
-                        <a href="a_propos.html">
-                            <span class="nav-text">À propos</span>
-                            <ion-icon class="nav-icon" name="person-circle-outline"></ion-icon>
+                        <a class="smooth-scroll nav-toggle-button" href="#reference">
+                            <span class="nav-text">Références</span>
+                            <ion-icon class="nav-icon" name="ribbon-outline"></ion-icon>
+                        </a>
+                        <a class="smooth-scroll nav-toggle-button" href="#histoire">
+                            <span class="nav-text">Histoire</span>
+                            <ion-icon class="nav-icon" name="receipt-outline"></ion-icon>
+                        </a>
+                        <a class="smooth-scroll nav-toggle-button" href="#fondateur">
+                            <span class="nav-text">Fondateurs</span>
+                            <ion-icon class="nav-icon" name="people-outline"></ion-icon>
                         </a>
                     </div>
                 </div>
@@ -40,14 +49,21 @@
             <div class="header-container">
                 <a href="index.html"><img id="logo-principal" src="images/bendroz-logo.png" alt="logo"></a>
                 <nav class="nav-large-screen">
-                    <a href="index.html">
-                        <span class="text-link">Accueil</span>
+                    <a class="smooth-scroll" href="#prestation">
+                        <span class="nav-text">Prestations</span>
+                        <ion-icon class="nav-icon" name="hammer-outline"></ion-icon>
                     </a>
-                    <a href="prestation.html">
-                        <span class="text-link">Prestation</span>
+                    <a class="smooth-scroll" href="#reference">
+                        <span class="nav-text">Références</span>
+                        <ion-icon class="nav-icon" name="ribbon-outline"></ion-icon>
                     </a>
-                    <a href="a_propos.html">
-                        <span class="text-link">À propos</span>
+                    <a class="smooth-scroll" href="#histoire">
+                        <span class="nav-text">Histoire</span>
+                        <ion-icon class="nav-icon" name="receipt-outline"></ion-icon>
+                    </a>
+                    <a class="smooth-scroll" href="#fondateur">
+                        <span class="nav-text">Fondateurs</span>
+                        <ion-icon class="nav-icon" name="people-outline"></ion-icon>
                     </a>
                 </nav>
                 <button type="button" class="nav-button open" onclick="toggleNav()">
@@ -56,54 +72,99 @@
             </div>
         </header> 
         <main class="main">
-            <div class="introduction-container">
+            <div id="first" class="introduction-container">
                 <h1>Notre savoir faire rien que pour vous</h1>
                 <div class="dot">
                     <div></div>
                 </div>
-                <p>Notre entreprise de géoinformatique offre des solutions innovantes pour répondre aux besoins en matière de géolocalisation et d'analyse spatiale. Nous travaillons avec une variété de secteurs, notamment l'environnement, l'urbanisme, les transports, l'agriculture et bien d'autres. Notre expertise en géoinformatique nous permet d'offrir des solutions personnalisées et efficaces pour répondre aux besoins de nos clients.</p>
+                <p>Notre entreprise de géoinformatique offre des solutions innovantes pour répondre aux besoins en matière de cartographie, d'analyse spatiale et de modélisation. Nous travaillons avec une variété de secteurs, notamment l'aménagement du territoire, la santé et les loisirs. Notre expertise en géoinformatique nous permet d'offrir des solutions personnalisées et efficaces pour répondre aux besoins de nos clients.</p>
             </div>
             
-            <div class="prestation-container">
-                <h1>Découvrir nos prestation</h1>
+            <div id="prestation" class="prestation-container">
+                <h1>Nos prestations</h1>
                 <div class="dot">
                     <div></div>
                 </div>
-                <div class="prestation-button-container">
-                    <div class="prestation-button">
-                        <a href="prestation.html#analyse-spatiale">
-                            <button class="analyse-spatiale" type="button">
-                                <ion-icon  class="prestation-icon" name="layers"></ion-icon>
-                                <span class="prestation-text">Analyse spatiale</span>
-                            </button>
-                        </a>
-                        <a href="prestation.html#map">
-                            <button class="cartographie" type="button">
-                                <ion-icon class="prestation-icon" name="map"></ion-icon>
-                                <span class="prestation-text">Cartographie</span>
-                            </button>                 
-                        </a>
+                <div class="prestation-box">
+                    <div id="analyse-spatiale" class="p-container">
+                        <div class="p-content">
+                            <div class="p-image">
+                                <img  id="analyse_spatiale" src="images/prestation-analyse.png" alt="analyse">
+                            </div>
+        
+                            <div class="p-description"><p>Explorez le pouvoir de l'analyse spatiale : des données géographiques qui révèlent l'invisible.</p></div>    
+                        </div>
                         
-                        
-                       
+                        <div class="p-title">
+                            <span class="p-text">Analyse spatiale</span>
+                        </div>  
                     </div>
-                    <div class="prestation-button">
-                        <a href="prestation.html#database">
-                            <button class="database" type="button">
-                                <ion-icon class="prestation-icon" name="server"></ion-icon>
-                                <span class="prestation-text">Base de données</span>
-                            </button>
-                        </a>
-                        <a href="prestation.html#teledetection">
-                            <button class="teledetection" type="button">
-                                <ion-icon class="prestation-icon" name="earth"></ion-icon>
-                                <span class="prestation-text">Télédétection</span>
-                            </button>
-                        </a>                        
-                    </div>                    
+    
+                    <div id="map" class="p-container">
+                        <div class="p-content">
+                            <div class="p-image">
+                                <img  id="map" src="images/prestation-cartographie.png" alt="map">
+                            </div>
+        
+                            <div class="p-description"><p>Des cartes précises, des décisions éclairées : notre expertise cartographique donne du sens à vos données.</p></div>
+                              
+                        </div>
+                        
+                        <div class="p-title">
+                            <span class="p-text">Cartographie</span>
+                        </div>  
+                    </div>
+    
+                    <div id="web-sig" class="p-container">
+                        <div class="p-content">
+                            <div class="p-image">
+                                <img  id="map" src="images/prestation-web.png" alt="web-sig">
+                            </div>
+        
+                            <div class="p-description"><p>Des outils précieux, une nouvelle aproche : notre expertise en Web SIG vous accompagnera où que vous soyez.</p></div>
+                            
+                        </div>
+                        
+                        <div class="p-title">
+                            <span class="p-text">Web SIG</span>
+                        </div>  
+                    </div>
+    
+                    <div id="modelisation" class="p-container">
+                        <div class="p-content">
+                            <div class="p-image">
+                                <img  id="map" src="images/prestation-modelisation.png" alt="database">
+                            </div>
+        
+                            <div class="p-description"><p>Des données organisées, des solutions innovantes : laissez-nous prendre soin de vos informations cruciales.</p></div>
+                            
+                        </div>
+                        
+                        <div class="p-title">
+                            <span class="p-text">Modélisation</span>
+                        </div>  
+                    </div>
+    
+                    <div id="teledetection" class="p-container">
+                        <div class="p-content">
+                            <div class="p-image">
+                                <img  id="teledetection" src="images/prestation-teledetection.png" alt="teledetection">
+                            </div>
+                            
+                            <div class="p-description"><p>Des solutions de pointe depuis l'espace : notre savoir-faire en télédétection élève vos projets vers de nouveaux sommets.</p></div>
+                            
+                        </div>
+                        
+                        <div class="p-title">
+                            <span class="p-text">Télédétection</span>
+                        </div>  
+                    </div>
                 </div>
+                
             </div>
-            <div class="reference-container">
+
+
+            <div id="reference" class="reference-container">
                 <h1>Nos références</h1>
                 <div class="dot">
                     <div></div>
@@ -112,7 +173,7 @@
                     <div class="reference-pane">
                         <div class="ref1">
                             <div class="reference-content">
-                                <h2>Couverture A9</h2>
+                                <p class="title">Couverture A9</p>
                                 <img class="image" src="images/couverture_A9.png" alt="">
                                 <p>Création d'un jumeau numérique pour le projet de construction de l'autoroute A9 à Boveresse</p>
                             </div>
@@ -120,13 +181,51 @@
                     </div>
                     <div class="reference-pane ref2">
                         <div class="reference-content">
-                            <h2>Where2Play</h2>
+                            <p class="title" >Where2Play</p>
                             <img class="image" src="images/where2play.png" alt="">
                             <p>Where2Play est une application mobile permettant de localiser des terrains de sport sur toute la Suisse romande</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="histoire" class="a-histoire-container">
+                <h1>Histoire</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="a-histoire-text">
+                    <p>Il était une fois deux jeunes apprentis passionnés par la géomatique, Amine et Arnaud. Ils avaient étudié la géomatique pendant des années et étaient fascinés par la façon dont les données spatiales pouvaient être utilisées pour résoudre des problèmes dans différents domaines.</p>
+                    <p>Un jour, alors qu'ils étaient en train de discuter de leur passion pour la géomatique, ils se sont rendu compte qu'il y avait un besoin croissant pour des services de géoinformatique dans différents secteurs tels que l'environnement, l'aménagement du territoire, la santé et bien d'autres.</p>
+                    <p class="unique-text">BENDROZ était né</p>
+                </div>
+            </div>
+
+            <div id="fondateur" class="a-fondateur-container">
+                <h1>Fondateurs</h1>
+                <div class="dot">
+                    <div></div>
+                </div>
+                <div class="a-fondateur-content">
+                    <figure class="a-affiche-container">
+                        <img class="fondateur" id="amine" src="images/amine.jpg" alt="Amine">
+                        <div class="a-affiche-text">
+                            <span>Amine Benalem</span>
+                            <span>Spécialiste SIG territorial</span>
+                            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/amine-benalem-79ab20176/"><span>Linkedin <i class="lien fa-brands fa-linkedin fa-xl"></i></span></i></a>
+                        </div>
+                    </figure>
+                    <figure class="a-affiche-container">
+                        <img class="fondateur" id="arnaud"  src="images/arnaud.jpg" alt="Arnaud">
+                        <div class="a-affiche-text">
+                            <span>Arnaud Amez-Droz</span>
+                            <span>Développeur SIG</span>
+                            <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/arnaud-amez-droz-767329205/"><span>Linkedin <i class="lien fa-brands fa-linkedin fa-xl"></i></span></a>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
         </main> 
         <footer class="footer">
             <div class="footer-container">
@@ -134,6 +233,28 @@
             </div>
         </footer>
     
+
+
+    <script>
+        var scroll = new SmoothScroll('.smooth-scroll', {
+          speed: 1000, // Durée de l'animation en millisecondes (1 seconde dans cet exemple)
+          easing: 'easeInOutCubic', // Type d'animation (facultatif)
+          offset: function(anchor, toggle) {
+            var scrollMarginTop = -60; // Ajoutez ici la valeur de votre scroll-margin-top en pixels
+            return scrollMarginTop * -1;
+          }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+                const buttonsNavPane = document.getElementsByClassName("nav-toggle-button");
+
+                for (let i = 0; i < buttonsNavPane.length; i++) {
+                    buttonsNavPane[i].addEventListener("click", function(e) {
+                        document.body.classList.toggle("nav-open");
+                    });
+                }
+            });
+    </script>    
     </body>
 </html>
 
